@@ -1,3 +1,4 @@
+"use strict";
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
@@ -22,7 +23,17 @@ __export(src_exports, {
   sayhello: () => sayhello
 });
 module.exports = __toCommonJS(src_exports);
-function sayhello() {
+
+// src/functions.ts
+function sayhello({ fisrName, lastName, age }) {
+  console.log("Say hello");
+  console.log(`your first name is ${fisrName}`);
+  if (lastName) {
+    console.log(`your last name is ${lastName}`);
+  }
+  if (age) {
+    console.log(`your age  is ${age}`);
+  }
 }
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {

@@ -1,3 +1,9 @@
-declare function sayhello(): void;
+type SayHelloProp = {
+    fisrName: string;
+    lastName?: string;
+    age?: number;
+};
 
-export { sayhello };
+declare function sayhello({ fisrName, lastName, age }: SayHelloProp): void;
+
+export { type SayHelloProp, sayhello };

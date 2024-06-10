@@ -1,2 +1,2 @@
-export * from "./functions.ts";
-export * from "./types.ts";
+export * from "./functions";
+export * from "./types";
